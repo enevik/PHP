@@ -25,7 +25,7 @@ try {
 } catch (PDOException $e) {
     echo "<div class='note' style='background: #fedde9; padding: 10px; margin: 10px; font-family: courier'>
             <h4>OEI!</h4>
-            Welkom op het oefen project voor het maken van een login- en registreersysteem.
+            Welkom op het oefen lalala project voor het maken van een login- en registreersysteem.
             Zoals je wellicht zult zien zie je hieronder een foutmelding... 
             Voordat je deze voorbeeld applicatie kunt gebruiken zul je een aantal dingen moeten doen:
             <ol>    
