@@ -1,5 +1,4 @@
 <?php require 'header.php'; ?>
-
     <!doctype html>
     <html class="no-js" lang="">
 
@@ -23,26 +22,30 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-
+    <!-- Add your site or appliecation content here -->
     <main>
-        <div class="container">
-            <h1>De Gokker</h1>
+        <div class="contianer">
+            <h2>Login Form</h2>
 
-            <form action="/action_page.php">
+            <form action="logincontroller.php">
                 <div class="imgcontainer">
                     <img src="img/banner.png" alt="Avatar" class="avatar">
                 </div>
 
-                <div class="info-degokker">
-                    <h2>Welkom bij onze website!</h2>
-                    <p>Hier ken je ons game de gokker vinden. We hopen dat je de game leuk ga vinden! De game gaat
-                        over een honderace. Je kan alleen spelen of met vrienden!
-                    </p>
+                <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit"><a href="index.html">Login</a></button>
                 </div>
 
-                <button type="submit">Download File</button>
-
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn"><a href="register.html">register</a></button>
+                </div>
+            </form>
         </div>
     </main>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
