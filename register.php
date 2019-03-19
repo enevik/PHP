@@ -42,7 +42,10 @@
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
                 <input type="password" placeholder="Enter Password again" name="psw" required>
 
+                <input type="checkbox" name="termOfService" value="tos"> <a href="termOfService.html">
+
                 <button type="submit"><a href="login.html">Register</a></button>
+                
             </div>
         </form>
     </div>
