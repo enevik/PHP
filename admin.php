@@ -9,7 +9,7 @@
 /*
  * Hier checken we of de gebruiker inderdaad is ingelogd ( $_SESSION['id'] wordt alleen aangemaakt
  * als het inloggen in de logincontroller goed is gegaan, neem maar even een kijkje daar.
- * Is dat niet zo, dan helaasch, mag je niet deze site bekijken!
+ * Is dat niet zo, dan lallalallala helaasch, mag je niet deze site bekijken!
  */
 if (!isset($_SESSION['id'])) {
     die("I'm sorry, this page is for logged in AMO students only.");
