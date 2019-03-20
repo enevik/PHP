@@ -1,4 +1,8 @@
-<?php require 'header.php'; ?>
+<?php
+
+require 'header.php';
+
+?>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -28,7 +32,7 @@
     <div class="container">
         <h1>De Gokker</h1>
 
-        <form action="/action_page.php">
+        <form action="login.php">
             <div class="imgcontainer">
                 <img src="img/banner.png" alt="Avatar" class="avatar">
             </div>
@@ -40,7 +44,7 @@
                 </p>
             </div>
 
-            <button type="submit">Download File</button>
+            <button type="submit" onclick="window.location.href='$login.php'">Download File</button>
 
     </div>
 </main>

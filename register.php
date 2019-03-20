@@ -1,4 +1,9 @@
-<?php require 'header.php'; ?>
+<?php
+
+require 'header.php';
+
+
+?>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -34,7 +39,7 @@
 
             <div class="container">
                 <label for="uname"><b>Email</b></label>
-                <input type="email" placeholder="Enter Email" name="uname" required>
+                <input type="email" placeholder="Enter Email" name="email" required>
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
@@ -42,11 +47,9 @@
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
                 <input type="password" placeholder="Enter Password again" name="psw" required>
 
-                
+                <input type="checkbox" ><a href="algemeen.php"> Algemeene Voorwaarden</a>
 
-                <input type="checkbox"> <a href="algemeen.php"> Algemeene Voorwaarden</a>
-
-                <button type="submit"><a href="login.php">Register</a></button>
+                <button type="submit">Register</button>
 
             </div>
         </form>
@@ -69,5 +72,9 @@
 </html>
 
 
-<?php require 'footer.php'; ?>
+<?php
+
+require 'footer.php';
+
+?>
 

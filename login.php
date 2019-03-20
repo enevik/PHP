@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" class="cancelbtn"><a href="register.php">register</a></button>
+                    <button type="button" class="cancelbtn" onclick="window.location.href='register.php'">register</button>
                 </div>
             </form>
         </div>
