@@ -42,7 +42,7 @@
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
                 <input type="password" placeholder="Enter Password again" name="psw" required>
 
-                <button type="submit"><a href="login.html">Register</a></button>
+                <button type="submit"><a href="index.php">Register</a></button>
             </div>
         </form>
     </div>
