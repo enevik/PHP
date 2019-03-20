@@ -8,16 +8,25 @@
 ?>
 
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Algemeen Voorwaarden</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <main>
+        <div class="container">
         <h1>Algemeen Voorwaarden</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto cum doloremque nostrum odit provident tempore? Dolorum eaque et exercitationem facilis fugiat impedit molestias optio, quibusdam quisquam quos sed temporibus?
@@ -27,6 +36,10 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad deserunt dignissimos, error eveniet facere impedit inventore ipsam magnam nesciunt quasi quia quidem quis quo sunt tempora voluptas voluptatibus.
         lorem
         </p>
+
+            <button type="submit"><a href="register.php">back</a></button>
+        </div>
+
     </main>
 </body>
 </html>
