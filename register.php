@@ -44,7 +44,7 @@
 
                 
 
-                <input type="checkbox"> <a href="algemeenvoorwaarden.html"> Algemeene Voorwaarden</a>
+                <input type="checkbox"> <a href="algemeen.php"> Algemeene Voorwaarden</a>
 
                 <button type="submit"><a href="login.php">Register</a></button>
 
