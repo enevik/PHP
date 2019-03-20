@@ -39,11 +39,11 @@
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <button type="submit"><a href="index.html">Login</a></button>
+                    <button type="submit"><a href="index.php">Login</a></button>
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" class="cancelbtn"><a href="register.html">register</a></button>
+                    <button type="button" class="cancelbtn"><a href="register.php">register</a></button>
                 </div>
             </form>
         </div>
