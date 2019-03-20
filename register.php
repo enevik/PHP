@@ -42,16 +42,12 @@
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
                 <input type="password" placeholder="Enter Password again" name="psw" required>
 
-<<<<<<< HEAD
-                <input type="checkbox" name="termOfService" value="tos"> <a href="termOfService.html">
-
-                <button type="submit"><a href="login.html">Register</a></button>
                 
-=======
+
                 <input type="checkbox"> <a href="algemeenvoorwaarden.html"> Algemeene Voorwaarden</a>
 
                 <button type="submit"><a href="login.php">Register</a></button>
->>>>>>> master
+
             </div>
         </form>
     </div>

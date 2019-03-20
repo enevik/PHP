@@ -29,7 +29,7 @@
         if ( isset($_SESSION['id']) ) {
             echo "You are currently logged in. Want to <a href='register.php'>logout?</a>";
         } else {
-            echo "<a href='login.php'>Login</a> &nbsp; or &nbsp; <a href='register.php'> register </a>";
+            echo "<a href='login.php'></a> &nbsp;  &nbsp; <a href='register.php'>  </a>";
         }
         ?>
     </nav>
