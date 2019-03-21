@@ -33,7 +33,7 @@
         <div class="container">
         <h1>Algemeen Voorwaarden</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto cum doloremque nostrum odit provident tempore? Dolorum eaque et exercitationem facilis fugiat impedit molestias optio, quibusdam quisquam quos sed temporibus?
+        <p>Lorem ipsum dolor test sit amet, consectetur adipisicing elit. Aliquid architecto cum doloremque nostrum odit provident tempore? Dolorum eaque et exercitationem facilis fugiat impedit molestias optio, quibusdam quisquam quos sed temporibus?
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam beatae consequatur ex excepturi expedita facilis modi non odio, officia pariatur quae, ratione soluta! Inventore nobis optio quis? Ex, iure.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut dolor eaque ex, explicabo incidunt maiores, molestiae nobis omnis optio perferendis praesentium quaerat repudiandae, sint temporibus. Commodi ducimus error possimus?
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis consequuntur deserunt dolorem doloribus error expedita fugiat hic illum incidunt neque nisi perspiciatis quidem quis rerum suscipit, vel velit voluptates?
