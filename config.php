@@ -8,16 +8,17 @@
 
 // Connectie met database zoals jullie gewend zijn...
 
-$dbHost = "localhost";
-$dbName = "accounts";
-$dbUser = "root";
-$dbPass = "";
+$dbHost = 'localhost';
+$dbUser = 'root';
+$dbPass = '';
+$dbName = 'accounts';
 
 $db = new PDO(
-    "mysql:host=$dbHost; dbname=$dpName",
+    "mysql:host= $dbHost; dbname=$dbName",
     $dbUser,
-    $dpPass
+    $dbPass
 );
+
 
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

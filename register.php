@@ -1,21 +1,5 @@
 <?php
 
-require 'config.php';
-require 'header.php';
-
-$email = $_POST ['email'];
-$pass = $_GET ['password'];
-
-$sql = "INSERT INTO accounts ( email, password) VALUE (:email, :password)";
-
-$prepare = $db->prepare($sql);
-$prepare->execute([
-        ':email' => $email,
-        ':password' => $pass
-]);
-header('Location: login.php');
-
-
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -45,20 +29,20 @@ header('Location: login.php');
     <div class="container">
         <h2>Register Form</h2>
 
-        <form action="loginController.php">
+        <form action="loginController.php" method="post">
             <div class="imgcontainer">
                 <img src="img/banner.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
                 <label for="uname"><b>Email</b></label>
-                <input type="email" placeholder="Enter Email" name="email" required>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" maxlength="7" required>
 
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
-                <input type="password" placeholder="Enter Password again" name="psw" required>
+                <input type="password" placeholder="Enter Password again" maxlength="7" name="psw" required>
 
                 <input type="checkbox" ><a href="algemeen.php"> Algemeene Voorwaarden</a>
 

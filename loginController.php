@@ -13,6 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
 
 if ( $_POST['type'] === 'login' ) {
     var_dump($_POST);
+
+
+
+
+
     /*
      * Hier komen we als we de login form data versturen.
      * things to do:
@@ -29,6 +34,11 @@ if ( $_POST['type'] === 'login' ) {
 
 if ($_POST['type'] === 'register') {
     var_dump($_POST);
+
+    $email = $_POST ['email'];
+    $password = $_POST ['password'];
+
+
     /*
      * Hier komen we als we de register form data versturen
      * things to do:
