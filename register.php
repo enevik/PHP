@@ -1,6 +1,19 @@
 <?php
 
+require 'config.php';
 require 'header.php';
+
+$email = $_POST ['email'];
+$pass = $_GET ['password'];
+
+$sql = "INSERT INTO accounts ( email, password) VALUE (:email, :password)";
+
+$prepare = $db->prepare($sql);
+$prepare->execute([
+        ':email' => $email,
+        ':password' => $pass
+]);
+header('Location: login.php');
 
 
 ?>

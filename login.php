@@ -1,4 +1,7 @@
-<?php require 'header.php'; ?>
+<?php
+require 'header.php';
+require 'config.php';
+?>
     <!doctype html>
     <html class="no-js" lang="">
 

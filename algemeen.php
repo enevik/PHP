@@ -6,7 +6,7 @@
  * Time: 09:40
  */
 
-
+require 'config.php';
 
 
 ?>
