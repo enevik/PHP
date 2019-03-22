@@ -11,32 +11,20 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
     exit;
 }
 
-if ( $_POST['type'] === 'login' ) {
-    var_dump($_POST);
-
-
-
-
-
-    /*
-     * Hier komen we als we de login form data versturen.
-     * things to do:
-     * 1. Checken of gebruikersnaam EN email in de database bestaat met de ingevoerde data
-     * 2. Indien ja, een $_SESSION['id'] vullen met de id van de persoon die probeert in te loggen.
-     * 3. gebruiker doorsturen naar de admin pagina
-     *
-     * 3. Indien nee, gebruiker terugsturen naar de login pagina met de melding dat gebruikersnaam en/of
-     * wachtwoord niet in orde is.
-     *
-     */
-    exit;
-}
-
 if ($_POST['type'] === 'register') {
-    var_dump($_POST);
+    /* var_dump($_POST); */
 
     $email = $_POST ['email'];
     $password = $_POST ['password'];
+
+    $sql = "INSERT INTO accounts (email, password) VALUE(:email, :password)";
+
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':email' => $email,
+        ':password' => $password
+    ]);
+    header('location: index.php');
 
 
     /*
@@ -54,6 +42,27 @@ if ($_POST['type'] === 'register') {
      *
      */
 
+    exit;
+}
+
+if ( $_POST['type'] === 'login' ) {
+    /*var_dump($_POST);*/
+
+
+
+
+
+    /*
+     * Hier komen we als we de login form data versturen.
+     * things to do:
+     * 1. Checken of gebruikersnaam EN email in de database bestaat met de ingevoerde data
+     * 2. Indien ja, een $_SESSION['id'] vullen met de id van de persoon die probeert in te loggen.
+     * 3. gebruiker doorsturen naar de admin pagina
+     *
+     * 3. Indien nee, gebruiker terugsturen naar de login pagina met de melding dat gebruikersnaam en/of
+     * wachtwoord niet in orde is.
+     *
+     */
     exit;
 }
 

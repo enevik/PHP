@@ -30,6 +30,7 @@
         <h2>Register Form</h2>
 
         <form action="loginController.php" method="post">
+            <input type="hidden" name="type" value="register">
             <div class="imgcontainer">
                 <img src="img/banner.png" alt="Avatar" class="avatar">
             </div>
@@ -44,7 +45,7 @@
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
                 <input type="password" placeholder="Enter Password again" maxlength="7" name="psw" required>
 
-                <input type="checkbox" ><a href="algemeen.php"> Algemeene Voorwaarden</a>
+                <input type="checkbox" required><a href="algemeen.php"> Algemeene Voorwaarden</a>
 
                 <button type="submit">Register</button>
 
