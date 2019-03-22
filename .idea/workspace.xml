@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/config.php" description="$dbUser = 'root';&#10;$dbPass = '';&#10;$dbName = 'account..." line="14" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c2562e-57d9-4838-b7d6-80a9fd01ce4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-    </list>
+    <list default="true" id="29c2562e-57d9-4838-b7d6-80a9fd01ce4f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state relative-caret-position="153">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -38,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="646">
               <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
             </state>
           </provider>
@@ -123,12 +119,12 @@
       <workItem from="1553203774143" duration="2137000" />
       <workItem from="1553251126553" duration="65000" />
       <workItem from="1553251228720" duration="225000" />
-      <workItem from="1553252389254" duration="2025000" />
+      <workItem from="1553252389254" duration="2262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4610000" />
+    <option name="totallyTimeSpent" value="4847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -215,24 +211,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="646">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+        <state relative-caret-position="153">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="357">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
