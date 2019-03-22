@@ -40,14 +40,14 @@
                 <input type="email" placeholder="Enter Email" name="email" id="email" required>
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" maxlength="7" required>
+                <input type="password" placeholder="Enter Password" name="password" maxlength="7" required>
 
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
-                <input type="password" placeholder="Enter Password again" maxlength="7" name="psw" required>
+                <input type="password" placeholder="Enter Password again" maxlength="7" name="password" required>
 
                 <input type="checkbox" required><a href="algemeen.php"> Algemeene Voorwaarden</a>
 
-                <button type="submit">Register</button>
+                <button type="submit" value="Create new contact">Register</button>
 
             </div>
         </form>

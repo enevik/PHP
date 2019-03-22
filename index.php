@@ -1,5 +1,5 @@
 <?php
-
+$sql = "SELECT * FROM accounts ";
 ?>
 <!doctype html>
 <html class="no-js" lang="">

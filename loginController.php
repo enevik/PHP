@@ -22,7 +22,7 @@ if ($_POST['type'] === 'register') {
     $prepare = $db->prepare($sql);
     $prepare->execute([
         ':email' => $email,
-        ':password' => $password
+        ':password' => $pass
     ]);
     header('location: index.php');
 
@@ -47,10 +47,6 @@ if ($_POST['type'] === 'register') {
 
 if ( $_POST['type'] === 'login' ) {
     /*var_dump($_POST);*/
-
-
-
-
 
     /*
      * Hier komen we als we de login form data versturen.
