@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
 }
 
 if ($_POST['type'] === 'register') {
-    /* var_dump($_POST); */
+     var_dump($_POST);
 
     $email = $_POST ['email'];
     $password = $_POST ['password'];
