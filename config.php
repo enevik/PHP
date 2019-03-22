@@ -13,30 +13,22 @@ $dbUser = 'root';
 $dbPass = '';
 $dbName = 'accounts';
 
-$db = new PDO(
-    "mysql:host= $dbHost; dbname=$dbName",
-    $dbUser,
-    $dbPass
-);
-
-
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-
 /*   misschien is de try catch block nieuw voor jullie
  *   de try catch block probeert om de code in de try scope uit te voeren.
  *   lukt dat niet, dan wordt de code uitgevoerd die in de catch scope staat.
  *   Op deze manier heb je zelf wat beter in de hand wat er moet gebeuren als
  *   er iets in je applicatie fout gaat.
 */
-
 try {
-    $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+    $db = new PDO(
+        "mysql:host=$dbHost;dbname=$dbName",
+        $dbUser,
+        $dbPass
+    );
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
-
+    echo 'sorry er gaat iets fout';
 }
 
 /*
