@@ -58,6 +58,13 @@ $sql = "SELECT * FROM accounts ";
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+<?php
+if (isset($_GET['msg'])) {
+    $msg = 'Mail is al in gebruik.';
+    echo "<script>alert('$msg')</script>";
+}
+?>
 </body>
 
 </html>

@@ -21,9 +21,11 @@ require 'header.php';
 
 ?>
 
+
 <h1>Welcome to AMO Login system Admin Page </h1>
 <p>Still nothing special to see here but that's not the point.</p>
 <p>you can only get here while being logged in. Try to close your browser and you'll that you are still logged in!</p>
+    <a href=""></a>
 
 
 <?php require 'footer.php'; ?>

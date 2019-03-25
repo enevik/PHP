@@ -29,17 +29,19 @@
         <div class="contianer">
             <h2>Login Form</h2>
 
-            <form action="logincontroller.php">
+            <form action="logincontroller.php"  method="post">
+
+                <input type="hidden" name="type" value="login">
                 <div class="imgcontainer">
                     <img src="img/banner.png" alt="Avatar" class="avatar">
                 </div>
 
                 <div class="container">
-                    <label for="uname"><b>Email</b></label>
-                    <input type="email" placeholder="Enter Email" name="uname" required>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="password" required>
 
                     <button type="submit"><a href="index.php">Login</a></button>
                 </div>
