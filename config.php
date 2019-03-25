@@ -11,7 +11,7 @@
 $dbHost = 'localhost';
 $dbUser = 'root';
 $dbPass = '';
-$dbName = 'accounts';
+$dbName = 'amocontact';
 
 /*   misschien is de try catch block nieuw voor jullie
  *   de try catch block probeert om de code in de try scope uit te voeren.

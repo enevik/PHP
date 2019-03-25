@@ -11,40 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
     exit;
 }
 
-if ($_POST['type'] === 'register') {
-     var_dump($_POST);
-
-    $email = $_POST ['email'];
-    $password = $_POST ['password'];
-
-    $sql = "INSERT INTO accounts (email, password) VALUE(:email, :password)";
-
-    $prepare = $db->prepare($sql);
-    $prepare->execute([
-        ':email' => $email,
-        ':password' => $pass
-    ]);
-    header('location: index.php');
-
-
-    /*
-     * Hier komen we als we de register form data versturen
-     * things to do:
-     *
-     * 1. Checken of er al iemand met dit emailadres of username bestaat
-     * 2. Indien nee, eerst checken of de password en password_confirm inderdaad hetzelfde ingevoerde is.
-     * 3. Dan gebruiker inserten in de database, zodat deze kan gaan inloggen.
-     * 4. Gebruiker doorsturen naar de nieuwe inlog pagina.
-     *
-     * 5. Indien ja, gebruiker terugsturen naar register form met de melding dat gebruikersnaam en/of wachtworod niet op
-     * orde is.
-     *
-     *
-     */
-
-    exit;
-}
-
 if ( $_POST['type'] === 'login' ) {
     /*var_dump($_POST);*/
 
@@ -61,6 +27,51 @@ if ( $_POST['type'] === 'login' ) {
      */
     exit;
 }
+
+if ($_POST['type'] === 'register') {
+
+    $email = htmlentities( $_POST ['email']);
+    $password = htmlentities($_POST ['password']);
+    $password1 = htmlentities($_POST ['password1']);
+    $password = password_hash($password, PASSWORD_DEFAULT);
+
+    if($password==$password1){
+        $sql = "INSERT INTO accounts (email, password) VALUE(:email, :password)";
+
+
+        $prepare = $db->prepare($sql);
+        $prepare->execute([
+            ':email' => $email,
+            ':password' => $password
+        ]);
+
+
+        header('location: index.php');
+
+
+        /*
+         * Hier komen we als we de register form data versturen
+         * things to do:
+         *
+         * 1. Checken of er al iemand met dit emailadres of username bestaat
+         * 2. Indien nee, eerst checken of de password en password_confirm inderdaad hetzelfde ingevoerde is.
+         * 3. Dan gebruiker inserten in de database, zodat deze kan gaan inloggen.
+         * 4. Gebruiker doorsturen naar de nieuwe inlog pagina.
+         *
+         * 5. Indien ja, gebruiker terugsturen naar register form met de melding dat gebruikersnaam en/of wachtworod niet op
+         * orde is.
+         *
+         *
+         */
+
+        exit;
+    }
+    else{
+        echo ("je wachtwoord komt niet overheen");
+    }
+
+}
+
 
 
 

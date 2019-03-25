@@ -43,7 +43,7 @@
                 <input type="password" placeholder="Enter Password" name="password" maxlength="7" required>
 
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
-                <input type="password" placeholder="Enter Password again" maxlength="7" name="password" required>
+                <input type="password" placeholder="Enter Password again" maxlength="7" name="password1" required>
 
                 <input type="checkbox" required><a href="algemeen.php"> Algemeene Voorwaarden</a>
 
