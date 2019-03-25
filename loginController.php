@@ -86,8 +86,9 @@ if ($_POST['type'] === 'register') {
     $password = htmlentities($_POST ['password']);
     $password1 = htmlentities($_POST ['password1']);
 
-    $password = str_repeat(' ', '', $password);
-    $password1 = str_repeat(' ', '', $password1);
+    $password = str_replace(' ', '', $password);
+    $password1 = str_replace(' ', '', $password1);
+
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
         header('location: index.php');
