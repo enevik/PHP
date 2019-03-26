@@ -86,8 +86,10 @@ if ($_POST['type'] === 'register') {
     $password = htmlentities($_POST ['password']);
     $password1 = htmlentities($_POST ['password1']);
 
-    $password = str_replace(' ', '', $password);
-    $password1 = str_replace(' ', '', $password1);
+    // $password = str_replace(' ', '', $password);     (dit doet het zelfde als trim() functie op volgende regel)
+    // $password1 = str_replace(' ', '', $password1);   (dit doet het zelfde als trim() functie op volgende regel)
+    $password = trim($password);
+    $password1 = trim($password1);
 
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -101,7 +103,7 @@ if ($_POST['type'] === 'register') {
     ]);
     $fetchedEmail = $prepare->fetchAll(PDO::FETCH_ASSOC);
 
-    IF($fetchedEmail == true){
+    if($fetchedEmail == true){
         $msg = 'Sorry deze email is al in gebruik.';
         header("location:index.php?msg=$msg");
         $msg = htmlspecialchars($_GET['msg']);
