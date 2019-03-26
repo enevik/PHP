@@ -43,7 +43,7 @@
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="password" required>
 
-                    <button type="submit"><a href="index.php">Login</a></button>
+                    <button type="submit"><a href="download.php">Login</a></button>
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">

@@ -1,0 +1,10 @@
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\bin\Debug\dogRace.exe.config
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\bin\Debug\dogRace.exe
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\bin\Debug\dogRace.pdb
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.csprojAssemblyReference.cache
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.Form1.resources
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.Properties.Resources.resources
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.csproj.GenerateResource.cache
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.csproj.CoreCompileInputs.cache
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.exe
+C:\Users\enevi\OneDrive\Bureaublad\school\Projecten\periode 3\Gokkers\dogRace\dogRace\obj\Debug\dogRace.pdb

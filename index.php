@@ -42,7 +42,7 @@ $sql = "SELECT * FROM accounts ";
                 </p>
             </div>
 
-            <button type="submit" onclick="window.location.href='$login.php'">Download File</button>
+            <button type="submit" onclick="window.location.href='$login.php'">druk om in te loggen</button>
 
     </div>
 </main>
