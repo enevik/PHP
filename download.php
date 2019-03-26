@@ -2,6 +2,9 @@
 
 require 'config.php';
 
+if (!isset($_SESSION['id'])) {
+die("I'm sorry, this page is for logged in AMO students only.");
+    }
 ?>
 <!doctype html>
 <html class="no-js" lang="">

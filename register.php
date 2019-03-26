@@ -39,15 +39,15 @@ require 'config.php';
 
             <div class="container">
                 <label for="uname"><b>Email</b></label>
-                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                <input type="email" placeholder="Enter Email" name="email" id="email" >
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 7 or more characters" required minlength="7" required>
+                <input type="password" placeholder="Enter Password" name="password"   title="moet minimaal 7 karakters zijnn" >
 
                 <label for="psw"><b>Voer opnieuw Password in</b></label>
-                <input type="password" placeholder="Enter Password again" minlength="7" name="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 7 or more characters" requiredrequired>
+                <input type="password" placeholder="Enter Password again" name="password1"   title="moet minimaal 7 karakters zijn">
 
-                <input type="checkbox" required><a href="algemeen.php"> Algemeene Voorwaarden</a>
+                <input type="checkbox" name="check" value="on" ><a href="algemeen.php"> Algemene Voorwaarden</a>
 
                 <button type="submit" value="Create new contact">Register</button>
 

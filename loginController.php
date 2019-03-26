@@ -82,6 +82,11 @@ if ( $_POST['type'] === 'login' ) {
 
 if ($_POST['type'] === 'register') {
 
+    if(empty($_POST ['email'])){
+        echo "";
+        exit;
+    }
+
     $email = htmlentities( $_POST ['email']);
     $password = htmlentities($_POST ['password']);
     $password1 = htmlentities($_POST ['password1']);
@@ -103,34 +108,54 @@ if ($_POST['type'] === 'register') {
     ]);
     $fetchedEmail = $prepare->fetchAll(PDO::FETCH_ASSOC);
 
-    if($fetchedEmail == true){
-        $msg = 'Sorry deze email is al in gebruik.';
-        header("location:index.php?msg=$msg");
-        $msg = htmlspecialchars($_GET['msg']);
-        exit;
+
+
+
+    if($_POST['check'] != 'on'){
+        echo "accepteer algemeen voorwaarde";
+    }
+    else {
+
+
+        if ($password = preg_match('@[A-Z] [0-9]@', $password) &&
+            strlen($password) > 6) {
+            if ($password == $password1) {
+                if ($email == "") {
+                    echo 'email is vereist';
+                } else {
+                    if($fetchedEmail == true){
+                        $msg = 'Sorry deze email is al in gebruik.';
+                        header("location:index.php?msg=$msg");
+                        $msg = htmlspecialchars($_GET['msg']);
+                        exit;
+                    }
+                    else {
+
+
+                        $sql = "INSERT INTO accounts (email, password) VALUE(:email, :password)";
+
+
+                        $password = password_hash($password, PASSWORD_DEFAULT);
+
+                        $prepare = $db->prepare($sql);
+                        $prepare->execute([
+                            ':email' => $email,
+                            ':password' => $password
+                        ]);
+
+
+                        header('location: index.php');
+                    }
+                }
+                exit;
+            } else {
+                echo "wachtwoord komt niet overheen accepteer algemeene voorwaarde";
+            }
+        } else {
+            echo 'dit is fout moet minimaal 7 letters zijn en je moet hoofdletters in zitten';
+        }
     }
 
-
-
-    if($password == $password1) {
-        $sql = "INSERT INTO accounts (email, password) VALUE(:email, :password)";
-
-        $password = password_hash($password, PASSWORD_DEFAULT);
-
-        $prepare = $db->prepare($sql);
-        $prepare->execute([
-            ':email' => $email,
-            ':password' => $password
-        ]);
-
-
-
-        header('location: index.php');
-        exit;
-    }
-    else{
-        echo "wachtwoord komt niet overheen";
-    }
 
     /*
      * Hier komen we als we de register form data versturen

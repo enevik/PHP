@@ -1,4 +1,4 @@
-<?php
+<?php  session_start();
 /**
  * Created by PhpStorm.
  * User: fedje
@@ -61,4 +61,3 @@ catch (PDOException $e) {
 
 
 
-// session_start();
