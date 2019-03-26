@@ -26,7 +26,7 @@
 
     <!-- Add your site or appliecation content here -->
     <main>
-        <div class="contianer">
+        <div class="container">
             <h2>Login Form</h2>
 
             <form action="logincontroller.php"  method="post">
