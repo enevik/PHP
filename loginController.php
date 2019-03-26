@@ -43,7 +43,7 @@ if ( $_POST['type'] === 'login' ) {
 
                 $id = $account['id'];
                 $_SESSION['id'] = $id;
-                header( 'location: admin.php');
+                header( 'location: download.php');
             }
             else {
                 // wrong password try again.
